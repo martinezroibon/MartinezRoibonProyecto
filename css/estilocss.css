@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Crimson Pro', serif; }
+
+li {
+  display: inline-block; }
+
+.mainContainer {
+  width: 100%;
+  height: 900px;
+  display: grid;
+  grid-template-columns: 100%;
+  /*en porcentaje*/
+  grid-template-rows: 1fr 2fr;
+  grid-template-areas: "texto" "info-cuadrados"; }
+  .mainContainer .mainContainer_speechContainer {
+    height: auto;
+    display: grid;
+    grid-area: texto;
+    text-align: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas: "vision" "nuestrahistoria";
+    grid-row-gap: 2rem; }
+    .mainContainer .mainContainer_speechContainer .mainContainer__speechContainer__visionContainer {
+      grid-area: vision; }
+    .mainContainer .mainContainer_speechContainer .mainContainer__speechContainer__nuestrahistoriaContainer {
+      grid-area: nuestrahistoria; }
+  .mainContainer .mainContainer__rectaglesContainer {
+    grid-area: info-cuadrados;
+    height: auto;
+    display: grid;
+    grid-template-areas: "rec1 rec2 rec3";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 2rem;
+    justify-content: center;
+    justify-items: center;
+    align-items: center; }
+    .mainContainer .mainContainer__rectaglesContainer .mainContainer__rectaglesContainer__rectagleOne {
+      grid-area: rec1;
+      background-color: #cfcfcf; }
+    .mainContainer .mainContainer__rectaglesContainer .mainContainer_rectaglesContainer_rectagleTwo {
+      grid-area: rec2;
+      background-color: #8a8888; }
+    .mainContainer .mainContainer__rectaglesContainer .mainContainer_rectaglesContainer_rectagleThree {
+      grid-area: rec3;
+      background-color: black;
+      background-color: #969696; }
+
+footer {
+  height: 300px;
+  background-color: #a5a5a5; }
+
+.footerContacto {
+  color: darkred;
+  font-size: 25px;
+  text-align: center; }
+
+.whatsapp {
+  padding: 5px 5px 5px 5px;
+  position: fixed; }
+
+.navbar {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem 4 rem;
+  background-color: #acacac; }
+  .navbar .navbar__nav {
+    display: flex;
+    list-style: none; }
+    .navbar .navbar__nav li {
+      margin: 2rem 1rem; }
+      .navbar .navbar__nav li a {
+        text-decoration: none;
+        color: darkred; }
+
+.header__div__imagen {
+  margin: auto;
+  display: block; }
+
+.navFlex {
+  height: 50%;
+  background-color: #cf0404;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center; }
