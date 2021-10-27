@@ -45,15 +45,44 @@ li {
       background-color: #cfcfcf; }
     .mainContainer .mainContainer__rectaglesContainer .mainContainer_rectaglesContainer_rectagleTwo {
       grid-area: rec2;
-      background-color: #8a8888; }
+      background-color: #969696; }
     .mainContainer .mainContainer__rectaglesContainer .mainContainer_rectaglesContainer_rectagleThree {
       grid-area: rec3;
       background-color: black;
       background-color: #969696; }
 
+.main__tasaciones {
+  display: flex;
+  background-color: #969696;
+  justify-content: center;
+  font-size: 40px;
+  padding: 5px;
+  color: darkred; }
+  .main__tasaciones .main__tasaciones__div {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    background-color: #969696; }
+
+.main__alquileres {
+  display: flex;
+  background-color: #969696;
+  justify-content: center;
+  font-size: 40px;
+  padding: 5px;
+  color: darkred; }
+  .main__alquileres .main__alquileres__div {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    background-color: #969696; }
+
 footer {
   height: 300px;
-  background-color: #a5a5a5; }
+  background-color: #969696;
+  padding-top: 5px; }
 
 .footerContacto {
   color: darkred;
@@ -70,7 +99,7 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   padding: 2rem 4 rem;
-  background-color: #acacac; }
+  background-color: #969696; }
   .navbar .navbar__nav {
     display: flex;
     list-style: none; }

@@ -52,7 +52,7 @@ li{
         }
         .mainContainer_rectaglesContainer_rectagleTwo{
             grid-area: rec2;
-            @include colorRectangulos(rgb(138, 136, 136));
+            @include colorRectangulos(rgb(150, 150, 150));
         }
         .mainContainer_rectaglesContainer_rectagleThree{
             grid-area: rec3;
@@ -60,4 +60,38 @@ li{
             @include colorRectangulos(rgb(150, 150, 150));
         }
     }
+}
+.main__tasaciones{
+    display: flex;
+    background-color: rgb(150, 150, 150) ;
+    justify-content: center;
+    font-size: 40px;
+    padding: 5px;
+    color:rgb(139, 0, 0);
+    .main__tasaciones__div{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 5px;
+        background-color: rgb(150, 150, 150);
+        }
+}
+
+.main__alquileres{
+    display: flex;
+    background-color: rgb(150, 150, 150) ;
+    justify-content: center;
+    font-size: 40px;
+    padding: 5px;
+    color:rgb(139, 0, 0);
+    .main__alquileres__div{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 5px;
+        background-color: rgb(150, 150, 150);
+        }
+}
+.main__ventas{
+    
 }
