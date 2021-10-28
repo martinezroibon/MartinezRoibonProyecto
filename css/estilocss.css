@@ -1,104 +1,109 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
+.navbar-brand {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 100px;
+  box-shadow: 0 0 5px 1px gray; }
+  .navbar-brand img {
+    width: 100%; }
 
-body {
-  font-family: 'Crimson Pro', serif; }
+.bannerContainer {
+  position: relative;
+  max-height: 30rem;
+  overflow: hidden; }
+  .bannerContainer::after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    background-image: linear-gradient(to bottom right, #4affde50 0%, #5b9dff4d 40%, #d06bff59 60%, #ff34d355 100%);
+    background-size: 200% 200%;
+    animation: moveGradient 8s linear infinite alternate;
+    backdrop-filter: blur(4px); }
 
-li {
-  display: inline-block; }
+@keyframes moveGradient {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: 100% 100%; } }
+  .bannerContainer h1 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    text-align: center;
+    z-index: 5;
+    color: white;
+    font-weight: bold;
+    width: 100%; }
 
-.mainContainer {
-  width: 100%;
-  height: 900px;
-  display: grid;
-  grid-template-columns: 100%;
-  /*en porcentaje*/
-  grid-template-rows: 1fr 2fr;
-  grid-template-areas: "texto" "info-cuadrados"; }
-  .mainContainer .mainContainer_speechContainer {
-    height: auto;
+main {
+  padding: 5rem 0; }
+  main .mainContainer {
     display: grid;
-    grid-area: texto;
-    text-align: center;
-    grid-template-columns: 100%;
-    grid-template-rows: 1fr 3fr;
-    grid-template-areas: "vision" "nuestrahistoria";
-    grid-row-gap: 2rem; }
-    .mainContainer .mainContainer_speechContainer .mainContainer__speechContainer__visionContainer {
-      grid-area: vision; }
-    .mainContainer .mainContainer_speechContainer .mainContainer__speechContainer__nuestrahistoriaContainer {
-      grid-area: nuestrahistoria; }
-  .mainContainer .mainContainer__rectaglesContainer {
-    grid-area: info-cuadrados;
-    height: auto;
-    display: grid;
-    grid-template-areas: "rec1 rec2 rec3";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-row-gap: 2rem;
-    justify-content: center;
-    justify-items: center;
-    align-items: center; }
-    .mainContainer .mainContainer__rectaglesContainer .mainContainer__rectaglesContainer__rectagleOne {
-      grid-area: rec1;
-      background-color: #cfcfcf; }
-    .mainContainer .mainContainer__rectaglesContainer .mainContainer_rectaglesContainer_rectagleTwo {
-      grid-area: rec2;
-      background-color: #969696; }
-    .mainContainer .mainContainer__rectaglesContainer .mainContainer_rectaglesContainer_rectagleThree {
-      grid-area: rec3;
-      background-color: black;
-      background-color: #969696; }
-
-.main__tasaciones {
-  display: flex;
-  background-color: #969696;
-  justify-content: center;
-  font-size: 40px;
-  padding: 5px;
-  color: darkred; }
-  .main__tasaciones .main__tasaciones__div {
-    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(auto, 1fr));
+    grid-auto-rows: auto;
+    grid-gap: 1rem; }
+    main .mainContainer .speechContainer {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+      background: rgba(125, 125, 125, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2); }
+      main .mainContainer .speechContainer h3 {
+        font-weight: bold; }
+      main .mainContainer .speechContainer p, main .mainContainer .speechContainer ul {
+        padding: 0;
+        text-decoration: none;
+        list-style: none;
+        font-weight: lighter; }
+  main .rectanglesContainer {
+    display: flex;
     align-items: center;
-    text-align: center;
-    padding: 5px;
-    background-color: #969696; }
+    margin: 1rem auto;
+    border-radius: 15px;
+    max-height: 25rem;
+    overflow: hidden; }
 
-.main__alquileres {
+.whatsApp {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
   display: flex;
-  background-color: #969696;
   justify-content: center;
-  font-size: 40px;
-  padding: 5px;
-  color: darkred; }
-  .main__alquileres .main__alquileres__div {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 5px;
-    background-color: #969696; }
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 0 5px 1px gray;
+  border-radius: 100px;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px); }
+  .whatsApp img {
+    width: 40px; }
 
 footer {
-  height: 300px;
-  background-color: #969696;
-  padding-top: 5px; }
-
-.footerContacto {
-  color: darkred;
-  font-size: 25px;
-  text-align: center; }
-
-.whatsapp {
-  padding: 5px 5px 5px 5px;
-  position: fixed; }
+  background: black;
+  min-height: 15vh;
+  padding: 1rem; }
+  footer .footerContacto {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    footer .footerContacto a {
+      display: flex;
+      justify-content: center;
+      text-decoration: none;
+      color: white; }
 
 .navbar {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
   justify-content: space-between;
-  padding: 2rem 4 rem;
+  padding: 2rem 4rem;
   background-color: #969696; }
   .navbar .navbar__nav {
     display: flex;

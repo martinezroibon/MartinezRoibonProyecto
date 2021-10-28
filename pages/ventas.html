@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,72 +10,164 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5.1 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 </head>
+
 <body>
     <header>
-        <nav class="navbar">
-            <div class="navbar__logo">
-                <img class="animate__animated animate__flip" src="../assets/logo-inmobiliaria-png.png" alt="Logo martinez roibon" width="15%" >
+        <nav class="navbar navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img class="animate__animated animate__flip" src="../assets/logo-inmobiliaria-png.png"
+                        alt="Logo martinez roibon">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Martinez Roibon</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="alquileres.html">Alquileres</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="ventas.html">Ventas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="tasaciones.html">Tasaciones</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contactos.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <ul class="navbar__nav">
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="../pages/alquileres.html">ALQUILERES</a></li>
-                <li><a href="../pages/ventas.html">VENTAS</a></li>
-                <li><a href="../pages/tasaciones.html">TASACIONES</a></li>
-                <li><a href="../pages/contactos.html">CONTACTO</a></li>
-            </ul>
         </nav>
     </header>
     <main>
-        <p class="tablaDeptos">Deptos en venta: </p>
-        <table class="tablaDeptos">
-            <tr>
-                <th>DIRECCION</th>
-                <th>CARACTERISTICAS</th>
-                <th>PRECIO</th>
-            </tr>
-            <tr>
-                <td>mitre</td>
-                <td><ul>
-                    <li>4 amb</li>
-                    <li>luminoso</li>
-                    <li>2 baños</li> 
-                    </ul>
-                </td>
-                <td>170k</td>
-            </tr>
-            <tr>
-                <td>sarmiento</td>
-                <td><ul>
-                    <li>3 amb</li>
-                    <li>cocina con comedor</li>
-                    <li>baño y toilette</li> 
-                    </ul>
-                </td>
-                <td>120k</td>
-            </tr>
-            <tr>
-                <td>jean jaures</td>
-                <td><ul>
-                    <li>3 amb</li>
-                    <li>balcon corrido</li>
-                    <li>lavadero separado</li> 
-                    </ul>
-                </td>
-                <td>110k</td>
-            </tr>
-        </table>
-        <video src="/assets/video depto.mp4" autoplay controls loop></video>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../assets/jj_383_730/Jjaurez-1.jpg" class="d-block w-100"
+                                        alt="Foto juarez">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../assets/jj_383_730/Jjaurez-10.jpg" class="d-block w-100"
+                                        alt="Foto juarez">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../assets/jj_383_730/Jjaurez-11.jpg" class="d-block w-100"
+                                        alt="Foto juarez">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Jean Jaures</h5>
+                            <p class="card-text">description</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../assets/mitre_2004_4B/IMG_5235.JPG" class="d-block w-100"
+                                        alt="Foto mitre">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../assets/mitre_2004_4B/IMG_5237.JPG" class="d-block w-100"
+                                        alt="Foto mitre">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../assets/mitre_2004_4B/IMG_5244.JPG" class="d-block w-100"
+                                        alt="Foto mitre">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Mitre 2008</h5>
+                            <p class="card-text">description</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../assets/ruggieri/IMG_0002.jpeg" class="d-block w-100"
+                                        alt="Foto ruggieri">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../assets/ruggieri/IMG_0005.jpeg" class="d-block w-100"
+                                        alt="Foto ruggieri">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../assets/ruggieri/IMG_0008.jpeg" class="d-block w-100"
+                                        alt="Foto ruggieri">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Ruggieri</h5>
+                            <p class="card-text">description</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="footerContacto">
-            <p>CONTACTO</p>
-            <br>
-            <P>Telefono: 4433-2211 lineas rotativas</P>
-            <P>Celular/whatsup: (11) 1122-3344</P>
-            <P>email: info@martinezroibon.com.ar</P>
+            <div class="flex-grow-1 pe-3">
+                <p>CONTACTO</p>
+                <P>Telefono: 4433-2211 lineas rotativas</P>
+                <P>Celular/whatsup: (11) 1122-3344</P>
+                <P>email: info@martinezroibon.com.ar</P>
+            </div>
+            <ul class="navbar-nav flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/alquileres.html">Alquileres</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/ventas.html">Ventas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/tasaciones.html">Tasaciones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/contactos.html">Contacto</a>
+                </li>
+            </ul>
         </div>
-        
     </footer>
+    <!-- Script Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+        </script>
 </body>
+
 </html>
